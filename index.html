@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eastern Woodlands Trading Company</title>
+  <style>
+    :root {
+      --leather-dark: #191410;
+      --leather-card: #241b14;
+      --leather-border: #423225;
+      --bone-white: #f3efe6;
+      --bone-muted: #b5a999;
+      --gold: #f4d06f;
+      --gold-dark: #c4a44f;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace; /* Gives a historic ledger feel */
+      background-color: var(--leather-dark);
+      color: var(--bone-white);
+      line-height: 1.6;
+      background-image: radial-gradient(circle at center, #2a2018 0%, var(--leather-dark) 90%);
+    }
+
+    /* Trading Post Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 40px;
+      background-color: #110d0a;
+      border-bottom: 3px solid var(--leather-border);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+    }
+
+    .brand-title {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: var(--bone-muted);
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    nav a:hover, nav a.active {
+      color: var(--gold);
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      border-bottom: 2px solid var(--leather-border);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--gold);
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--bone-muted);
+      margin-bottom: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--leather-dark);
+      padding: 14px 30px;
+      border: 1px solid #000;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      transition: background 0.2s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+
+    .btn:hover {
+      background: var(--gold-dark);
+    }
+
+    /* Container & Grids */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      color: var(--gold);
+      margin-bottom: 40px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-bottom: 1px dashed var(--leather-border);
+      padding-bottom: 15px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+    }
+
+    /* Leather Cards */
+    .card {
+      background: var(--leather-card);
+      border: 3px solid var(--leather-border);
+      border-radius: 4px;
+      padding: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+      position: relative;
+    }
+
+    .card h3 {
+      font-size: 1.6rem;
+      color: var(--gold);
+      margin-top: 15px;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    .card p {
+      color: var(--bone-muted);
+      margin-bottom: 30px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(244, 208, 111, 0.1);
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      font-size: 0.7rem;
+      padding: 4px 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Trading Post Header -->
+  <header>
+    <div class="brand-title">Eastern Woodlands Trading Co.</div>
+    <nav>
+      <a href="#" class="active">Ledger / Home</a>
+      <a href="#">The Post</a>
+      <a href="#">Little Turtle</a>
+      <a href="#">Running Bear</a>
+      <a href="#">Heritage</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Provisions, Hides & Frontier Goods</h1>
+    <p>A wilderness post for rugged adult apparel, horn & leather goods, artisan crafts, and the historic journeys of Little Turtle and Running Bear.</p>
+    <a href="#" class="btn">Enter The Trading Post</a>
+  </section>
+
+  <!-- Featured Collections -->
+  <div class="container">
+    <div class="section-title">The Trading Post Collections</div>
+    <div class="grid-2">
+      
+      <!-- Little Turtle Collection -->
+      <div class="card">
+        <div>
+          <span class="badge">Signature Series</span>
+          <h3>Little Turtle's Journeys</h3>
+          <p>Hand-bound volumes, companion audio, sensory soy candles, and woodland apparel rooted in ancestral tradition.</p>
+        </div>
+        <a href="#" class="btn" style="text-align: center;">View Goods</a>
+      </div>
+
+      <!-- Running Bear Collection -->
+      <div class="card">
+        <div>
+          <span class="badge" style="border-color: #a3b8cc; color: #a3b8cc;">Coming Expedition</span>
+          <h3>Running Bear's Journeys</h3>
+          <p>Forthcoming wilderness tales, rugged outdoor gear motifs, and heavy-duty trail provisions.</p>
+        </div>
+        <a href="#" class="btn" style="text-align: center;">Explore Line</a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
